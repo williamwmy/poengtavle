@@ -2,7 +2,7 @@
     "name": "Poengtavle",
     "short_name": "Poengtavle",
     "start_url": ".",
-    "display": "standalone",
+    "display": "fullscreen",
     "background_color": "#17171a",
     "theme_color": "#17171a",
     "description": "Enkel volleyball poengtavle",
@@ -19,4 +19,3 @@
       }
     ]
   }
-  
