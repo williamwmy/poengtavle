@@ -46,10 +46,13 @@ function App() {
         style={{
           display: "flex",
           flexDirection: "row",
-          gap: 0, // Fjern all gap mellom boksene
+          gap: 0, // Ingen mellomrom
           width: "100vw",
+          height: "72vh", // Gjør boksene ekstra høye
           justifyContent: "center",
           alignItems: "center",
+          margin: 0,
+          padding: 0,
         }}
       >
         <ScoreBox
@@ -167,23 +170,23 @@ function ScoreBox({ points, onAdd, color }) {
     <div
       style={{
         background: color,
-        width: "49vw",
-        height: "70vh",
-        borderRadius: "2vw",
+        width: "50vw",      // Fyller nøyaktig halve skjermen
+        height: "100%",     // Fyller hele høyden i containeren
+        borderRadius: 0,    // Ingen avrunding
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         userSelect: "none",
         cursor: "pointer",
-        margin: 0, // Ingen margin
-        boxShadow: `0 4px 24px ${color}66`,
+        margin: 0,
+        boxShadow: "none",
       }}
       onClick={onAdd}
       aria-label="Trykk for å øke poeng"
     >
       <span
         style={{
-          fontSize: "16vw",
+          fontSize: "17vw",
           fontWeight: "bold",
           color: "#fff",
           textShadow: `0 8px 32px #000b, 0 2px 0 #fff4`,
