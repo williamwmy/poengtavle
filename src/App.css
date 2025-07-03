@@ -1,7 +1,8 @@
 html, body, #root {
-  background: #17171a !important;
-  padding: 0;
+  overflow-x: hidden;
   margin: 0;
+  padding: 0;
+  background: #17171a;
 }
 
 #root {

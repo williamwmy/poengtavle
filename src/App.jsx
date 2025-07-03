@@ -33,8 +33,8 @@ function App() {
       style={{
         minHeight: "100vh",
         minWidth: "100vw",
-        width: "calc(100vw + env(safe-area-inset-left) + env(safe-area-inset-right))",
-        height: "calc(100vh + env(safe-area-inset-top) + env(safe-area-inset-bottom))",
+        width: "100vw",
+        height: "100vh",
         background: "#17171a",
         display: "flex",
         flexDirection: "column",
@@ -172,7 +172,7 @@ function ScoreBox({ points, onAdd, color }) {
     <div
       style={{
         background: color,
-        width: "49vw", // Litt mindre enn halvparten pga gap
+        width: "48vw", // Litt mindre enn halvparten, så gap ikke gir scroll
         height: "100%",
         borderRadius: 0,
         display: "flex",
@@ -188,7 +188,7 @@ function ScoreBox({ points, onAdd, color }) {
     >
       <span
         style={{
-          fontSize: "19vw", // Enda større tall
+          fontSize: "18vw", // Store tall
           fontWeight: "bold",
           color: "#fff",
           textShadow: `0 8px 32px #000b, 0 2px 0 #fff4`,
